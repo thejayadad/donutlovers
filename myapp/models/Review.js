@@ -18,7 +18,8 @@ const ReviewSchema = new mongoose.Schema({
         required: true
     },
     donutId: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Donut",
         required: true
     }
 }, { timestamps: true })

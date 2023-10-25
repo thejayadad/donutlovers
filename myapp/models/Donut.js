@@ -11,6 +11,10 @@ const DonutSchema = new mongoose.Schema({
         required: true,
         min: 6
     },
+    price: {
+        type: Number,
+        required: true,
+    },
     imageUrl: {
         type: String,
         required: true,
